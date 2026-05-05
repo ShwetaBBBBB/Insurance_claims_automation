@@ -1,0 +1,44 @@
+[project]
+name = "mcp-a2a-insurance"
+version = "0.1.0"
+description = "Claim processing using MCP, A2A and Langraph"
+authors = [
+    {name = "Karan Kajrolkar",email = "karan-sanjay.kajrolkar@capgemini.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "pymupdf (==1.25.5)",
+    "pymupdf4llm (==0.0.22)",
+    "numpy (>=2.3.3,<3.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "openai (>=1.108.2,<2.0.0)",
+    "azure-ai-documentintelligence (>=1.0.2,<2.0.0)",
+    "streamlit (>=1.49.1,<2.0.0)",
+    "azure-storage-blob (>=12.26.0,<13.0.0)",
+    "azure-identity (>=1.25.0,<2.0.0)",
+    "pypdf2 (>=3.0.1,<4.0.0)",
+    "langchain-openai (>=0.3.33,<0.4.0)",
+    "mcp (>=1.6.0,<2.0.0)",
+    "langgraph (>=0.3.27,<0.4.0)",
+    "langchain (>=0.3.23,<0.4.0)",
+    "langchain-core (>=0.3.51,<0.4.0)",
+    "langchain-mcp-adapters (>=0.0.7,<0.0.8)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "asyncio (>=3.4.3,<4.0.0)",
+    "secure-smtplib (>=0.1.1,<0.2.0)",
+]
+
+[tool.poetry]
+packages = [{include = "src"}]
+
+[tool.poetry.scripts]
+main = "src.main:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.30.1"
+
