@@ -48,14 +48,8 @@ For a detailed view, see [ARCHITECTURE.md](docs/ARCHITECTURE.md).
    ```
 
 3. **Configure Environment**:
-   Create a `.env` file in the root directory (see `.env.example` for reference):
-   ```env
-   OPENAI_API_KEY="your_key"
-   AZURE_OPENAI_ENDPOINT="your_endpoint"
-   AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT="your_doc_int_endpoint"
-   AZURE_DOCUMENT_INTELLIGENCE_KEY="your_doc_int_key"
-   ```
-
+   Create a `.env` file in the root directory
+   
 ## 🏃 Running the Application
 
 ### 1. Run the Streamlit Dashboard
